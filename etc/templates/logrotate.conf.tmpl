@@ -1,0 +1,30 @@
+## Logrotate configuration file fo Zope Debian package
+## /etc/logrotate.d/zope2.10
+
+#"${buildout:directory}/var/log/instance.log" "${buildout:directory}/var/log/instance-Z2.log" {
+#    weekly
+#    missingok
+#    rotate 52
+#    copytruncate
+#    compress
+#    delaycompress
+#    notifempty
+#    create
+#    sharedscripts
+#    postrotate
+#    sh -c 'for i in /var/lib/zope2.10/instance/* ; do [ -d "$i/log" -a -x "$i/bin/zopectl" -a -r "$i/var/Z2.pid" ] && "$i"/bin/zopectl logreopen ; done'
+#    endscript
+#}
+
+${buildout:directory}/var/log/instance.log ${buildout:directory}/var/log/instance-Z2.log {
+    rotate 52
+    weekly
+    create
+    compress
+    delaycompress
+    sharedscripts
+    postrotate
+        /bin/kill -USR2 $(cat ${buildout:directory}/var/instance.pid)
+        ${buildout:bin-directory}/instance logreopen
+    endscript
+}
