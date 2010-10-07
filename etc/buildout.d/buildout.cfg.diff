@@ -1,0 +1,8 @@
+60c60
+< http-address = ${hosts:http-address}:${ports:http-address}
+---
+> http-address = 8080
+224c224
+< user = ${zopeserver:user}
+---
+> user = admin:admin
