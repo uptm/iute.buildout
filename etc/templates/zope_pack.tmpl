@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Pack the zope database
+# Example to use with bellow command
+# wget -q http://localhost:8080/Control_Panel/Database/manage_pack?days:float=7 --http-user=admin --http-passwd=admin -q --delete-after
+#
+wget -q http://${hosts:user}:${hosts:password}@${hosts:http-address}:${ports:http-address}/Control_Panel/Database/manage_pack?days:float=7 -q --delete-after
