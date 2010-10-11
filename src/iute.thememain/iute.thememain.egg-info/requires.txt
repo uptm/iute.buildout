@@ -1,0 +1,4 @@
+setuptools
+uwosh.core
+iute.themebase
+plone.browserlayer

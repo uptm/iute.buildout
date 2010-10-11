@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="iute.default">
+
+	<browser:page
+		name="only_show_body_view"
+		for="Products.ATContentTypes.interface.document.IATDocument"
+		layer="iute.default.browser.interfaces.IIUTEDefaultLayer"
+		permission="zope2.View"
+		template="only_show_body_view.pt"
+		/>
+	  <browser:page
+  		name="reported-iute-errors"
+  		for="*"
+  		class=".views.IUTEErrorsView"
+  		permission="zope2.View"
+  		template="reported-errors.pt"
+  	/>
+		
+</configure>

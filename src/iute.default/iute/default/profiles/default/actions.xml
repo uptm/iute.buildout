@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+ 	<object name="object" meta_type="CMF Action Category">
+  		<property name="title"></property>
+  
+  		<object name="syndication" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">
+				Syndication
+			</property>
+   			<property name="description" i18n:translate="">
+   				
+   			</property>
+   			<property name="url_expr">
+				string:${folder_url}/synPropertiesForm
+			</property>
+   			<property name="icon_expr">
+   				
+   			</property>
+   			<property name="available_expr">
+				python:folder is object and portal.portal_syndication.isSiteSyndicationAllowed()
+			</property>
+   			<property name="permissions">
+    			<element value="Manage properties"/>
+   			</property>
+   			<property name="visible">
+				True
+			</property>
+ 		</object>
+	</object>
+	<object name="top_level_navigation" meta_type="CMF Action Category">
+		<property name="title">Top Level Navigation</property>
+	  	<object name="about_iute" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Acerca del IUTE</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: ${globals_view/navigationRootUrl}/institucion</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	  	<object name="sedes" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Sedes</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property
+	      		name="url_expr">string: ${globals_view/navigationRootUrl}/institucion/sedes</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	  	<object name="admision" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Admision</property>
+		   	<property name="description" i18n:translate=""></property>
+			<property name="url_expr">string: ${globals_view/navigationRootUrl}/admision</property>
+			<property name="icon_expr"></property>
+			<property name="available_expr"></property>
+			<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	  	<object name="estudios" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Estudios</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: ${globals_view/navigationRootUrl}/estudios</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	  	<object name="actualidad" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Actualidad</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: ${globals_view/navigationRootUrl}/actualidad</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	  	<object name="calendarios" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Calendarios</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: ${globals_view/navigationRootUrl}/actualidad/calendarios</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	  	<object name="contactenos" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Contactenos</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: ${globals_view/navigationRootUrl}/contact-info</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	  	<object name="accessibility" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Accessibility</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">python: here.portal_url() + '/accessibility-info'</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	</object>
+		<object name="sitemap" meta_type="CMF Action" i18n:domain="plone">
+		  <property name="title" i18n:translate="">Mapa del Sitio</property>
+		  <property name="description" i18n:translate=""></property>
+		  <property
+		      name="url_expr">string:${globals_view/navigationRootUrl}/sitemap</property>
+		  <property name="icon_expr"></property>
+		  <property name="available_expr"></property>
+		  <property name="permissions">
+		    <element value="View"/>
+		  </property>
+		  <property name="visible">True</property>
+		</object>
+	<object name="audience_navigation" meta_type="CMF Action Category">
+		<property name="title">Audience Navigation</property>
+		<object name="future_students" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Future Students</property>
+   			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">python:here.restrictedTraverse('@@iute_tools').iute_home_url() + '/future-students'</property>
+   			<property name="icon_expr"></property>
+   			<property name="available_expr"></property>
+   			<property name="permissions">
+    			<element value="View"/>
+   			</property>
+   			<property name="visible">False</property>
+  		</object>
+  		<object name="parents" meta_type="CMF Action" i18n:domain="plone">
+   			<property name="title" i18n:translate="">Parents</property>
+   			<property name="description" i18n:translate=""></property>
+   			<property name="url_expr">python:here.restrictedTraverse('@@iute_tools').iute_home_url() + '/parents-and-family'</property>
+   			<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">False</property>
+	  	</object>
+	  	<object name="alumni" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Alumni</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: http://www.uwosh.edu/alumni</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">False</property>
+	  	</object>
+	  	<object name="faculty_and_staff" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Faculty and Staff</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">python:here.restrictedTraverse('@@iute_tools').iute_home_url() + '/faculty-staff'</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">False</property>
+	  	</object>
+	  	<object name="current_students" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Current Students</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">python:here.restrictedTraverse('@@iute_tools').iute_home_url() + '/current-students'</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">False</property>
+	  	</object>
+	</object>
+	<object name="online_services" meta_type="CMF Action Category">
+	  	<property name="title">Online Services</property>
+
+	  	<object name="main" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Servicios en Linea</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr"></property>
+   			<property name="icon_expr"></property>
+   			<property name="available_expr"></property>
+   			<property name="permissions">
+    			<element value="View"/>
+   			</property>
+   			<property name="visible">True</property>
+  		</object>
+		<object name="control_estudios" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Registro y Control de Estudios</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: http://200.109.97.220/darce/</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+		<object name="control_estudios1" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Registro y Control de Estudios</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: http://www.uwosh.edu/assets/directory/</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">False</property>
+	  	</object>
+		<object name="aulas_cieve" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Aulas Virtuales - CIEVE</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr">string: http://cieve.net/virtual</property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+		<object name="repos_oa" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Repositorios (Proximamente)</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr"></property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+		<object name="iute_mail" meta_type="CMF Action" i18n:domain="plone">
+	   		<property name="title" i18n:translate="">Correo (Proximamente)</property>
+	   		<property name="description" i18n:translate=""></property>
+	   		<property name="url_expr"></property>
+	   		<property name="icon_expr"></property>
+	   		<property name="available_expr"></property>
+	   		<property name="permissions">
+	    		<element value="View"/>
+	   		</property>
+	   		<property name="visible">True</property>
+	  	</object>
+	</object>
+</object>

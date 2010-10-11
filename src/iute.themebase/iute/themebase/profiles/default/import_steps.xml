@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+    <!--
+  	<import-step 	id="iute.themebase"
+               		version="1"
+               		handler="iute.themebase.setuphandlers.setupVarious"
+               		title="iute.themebase: miscellaneous import steps">
+    	<dependency name="properties" />
+  	</import-step>
+  	-->
+</import-steps>

@@ -1,0 +1,55 @@
+History
+=======
+
+1.1.2
+-----
+
+* add metadata to css dtml files
+
+
+1.1.1
+-----
+
+* do not hide all images in portlets
+
+1.1
+---
+
+* updates how it handles dependencies
+
+
+1.0
+---
+
+* in login_form added link to more things to try, tweaked CSS
+  [Kim Nyugen]
+
+* fix for IE not seeing tabs for Edit, Contents, Sharing, etc.
+  [Kim Nyugen]
+
+* combined the login form bits
+  [Kim Nyugen]
+
+* calltoactions now offer the option to open in a new window
+  [Joshua Klotz]
+
+* new workmark and logos; sdist and upload commands
+  [Kim Nyugen]
+
+* change login portlet's "forgot password?" link to point to our
+  already-customized login_form rather than the mail_password_form
+  [Kim Nyugen]
+
+* IE fixes
+
+* various other things that are too many to list...
+
+
+0.3
+-------------------------------------
+
+* Removed Emergency Notification stuff
+  [Nathan Van Gheem]
+
+* removed some site properties
+  [Nathan Van Gheem]

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        allow_any="False"
+        cookie_persistence="False"
+        request_varname="plone_skin">
+
+    <object name="iute_theme_styles"
+        meta_type="Filesystem Directory View"
+        directory="iute.themebase:skins/iute_theme_styles"
+        remove="True"
+    />
+
+    <object name="iute_theme_custom_images"
+        meta_type="Filesystem Directory View"
+        directory="iute.themebase:skins/iute_theme_custom_images"
+        remove="True"
+    />
+	
+    <object name="iute_theme_custom_templates"
+        meta_type="Filesystem Directory View"
+        directory="iute.themebase:skins/iute_theme_custom_templates"
+        remove="True"
+    />
+	
+    <skin-path name="Plone Default">
+	    <layer name="iute_theme_styles"
+		    insert-after="custom"
+		    remove="True"
+		/>
+	    <layer name="iute_theme_custom_images"
+		    insert-after="iute_theme_styles"
+		    remove="True"
+		/>
+	    <layer name="iute_theme_custom_templates"
+		    insert-after="iute_theme_custom_images"
+		    remove="True"
+		/>	
+    </skin-path>
+
+</object>

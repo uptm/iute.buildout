@@ -1,0 +1,40 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="iute.thememain">
+
+    <!-- 'iute.thememain' Zope 3 browser layer -->
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="iute.thememain"
+     />
+				
+		<browser:page
+			name="makeSectionNavigableIUTE"
+			for="Products.ATContentTypes.interface.IATFolder"
+			class=".actions.MakeSectionNavigable"
+			permission="cmf.ManagePortal"
+    />
+		<browser:page
+			name="makeSectionNavigableIUTE"
+			for="Products.ATContentTypes.interface.IATBTreeFolder"
+			class=".actions.MakeSectionNavigable"
+			permission="cmf.ManagePortal"
+    />
+		<browser:page
+			name="removeSectionNavigableIUTE"
+			for="Products.ATContentTypes.interface.IATFolder"
+			class=".actions.RemoveSectionNavigable"
+			permission="cmf.ManagePortal"
+    />
+		<browser:page
+			name="removeSectionNavigableIUTE"
+			for="Products.ATContentTypes.interface.IATBTreeFolder"
+			class=".actions.RemoveSectionNavigable"
+			permission="cmf.ManagePortal"
+    />
+
+		<include package=".viewlets" />
+		
+</configure>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<contentrules>
+ <rule name="move-events" title="Todos los Eventos deben ir a la carpeta Actualidad"
+    description="Esta regla mueve todos los eventos creados a la carpeta Actualidad localizada en el directorio raíz de cada sitio de plone."
+    enabled="True" event="zope.app.container.interfaces.IObjectAddedEvent"
+    stop-after="False">
+  <conditions>
+   <condition type="plone.conditions.PortalType">
+    <property name="check_types">
+     <element>Event</element>
+    </property>
+   </condition>
+  </conditions>
+  <actions>
+   <action type="plone.actions.Move">
+    <property name="target_folder">/events</property>
+   </action>
+  </actions>
+ </rule>
+ <rule name="move-news-items" title="Todos las Noticias deben ir a la carpeta Actualidad"
+    description="Esta regla mueve todos los noticias creados a la carpeta Actualidad localizada en el directorio raíz de cada sitio de plone."
+    enabled="True" event="zope.app.container.interfaces.IObjectAddedEvent"
+    stop-after="False">
+  <conditions>
+   <condition type="plone.conditions.PortalType">
+    <property name="check_types">
+     <element>News Item</element>
+    </property>
+   </condition>
+  </conditions>
+  <actions>
+   <action type="plone.actions.Move">
+    <property name="target_folder">/news</property>
+   </action>
+  </actions>
+ </rule>
+ <assignment name="move-events" bubbles="True" enabled="True" location=""/>
+ <assignment name="move-news-items" bubbles="True" enabled="True" location=""/>
+</contentrules>

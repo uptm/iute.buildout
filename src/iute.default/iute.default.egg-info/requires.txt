@@ -1,0 +1,4 @@
+setuptools
+uwosh.requirements>=0.2b1
+uwosh.core>=0.3.4b1
+plone.browserlayer

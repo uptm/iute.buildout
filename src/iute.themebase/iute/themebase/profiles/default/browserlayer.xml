@@ -1,0 +1,8 @@
+<layers>
+    <layer name="iute.themebase" 
+           interface="iute.themebase.browser.interfaces.IIUTEThemeLayer" />
+
+<!-- XXX BAD, YES WE KNOW....  BACKWARDS COMPAT ISSUES -->
+    <layer name="iute.theme" 
+           interface="iute.theme.browser.interfaces.IIUTEThemeLayer" />
+</layers>

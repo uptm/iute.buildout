@@ -1,0 +1,4 @@
+<layers>
+    <layer name="iute.default" 
+           interface="iute.default.browser.interfaces.IIUTEDefaultLayer" />
+</layers>

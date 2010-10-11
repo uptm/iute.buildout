@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="iute.themebase">
+		
+	<include package=".viewlets" />
+
+	<browser:resource
+		name="iute-theme-base-config.png"
+		file="applications-graphics.png"
+		/>
+	
+	<adapter factory=".controlpanel.ThemeControlPanelAdapter" />
+	<browser:page
+		name="iute.themebase.configuration"
+		for="*"
+		class=".controlpanel.IUTEThemeConfigurationForm"
+		layer="iute.themebase.browser.interfaces.IIUTEThemeLayer"
+		permission="cmf.ManagePortal"
+		/>
+
+	<browser:page
+	  	for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+	  	name="iute-theme-base-manage-links"
+	  	class=".managelinks.ManageLinks"
+			permission="cmf.ManagePortal"
+			layer="iute.themebase.browser.interfaces.IIUTEThemeLayer"
+	  />
+	<browser:page
+	  	for="*"
+	  	name="iute-search"
+	  	class=".iutesearch.IUTESearch"
+		permission="zope2.View"
+		layer="iute.themebase.browser.interfaces.IIUTEThemeLayer"
+	  />
+
+	<browser:resource
+		file="pngie6fix.js"
+		name="iute.themebase.pngie6fix.js"
+		layer=".interfaces.IIUTEThemeLayer"
+	/>
+	
+</configure>
