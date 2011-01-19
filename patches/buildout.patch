@@ -1,8 +1,77 @@
-60c60
-< http-address = ${hosts:http-address}:${ports:http-address}
----
-> http-address = 8080
-224c224
-< user = ${zopeserver:user}
----
-> user = admin:admin
+*** buildout.cfg	2010-11-22 19:00:18.385673558 -0430
+--- buildout (copia).cfg	2010-11-22 19:05:30.201175553 -0430
+***************
+*** 57,63 ****
+  # -----
+  # Specify the port on which your Zope installation
+  # will listen:
+! http-address = 8080
+  
+  
+  ############################################
+--- 57,63 ----
+  # -----
+  # Specify the port on which your Zope installation
+  # will listen:
+! http-address = ${hosts:http-address}:${ports:http-address}
+  
+  
+  ############################################
+***************
+*** 131,137 ****
+  # ----------
+  # Change debug-mode to "on" to run in development mode.
+  # 
+! debug-mode = off
+  
+  
+  ############################################
+--- 131,137 ----
+  # ----------
+  # Change debug-mode to "on" to run in development mode.
+  # 
+! debug-mode = ${zopeserver:debug-mode}
+  
+  
+  ############################################
+***************
+*** 221,233 ****
+  zope2-location = ${zope2:location}
+  # The line below sets only the initial password. It will not change an
+  # existing password.
+! user = admin:admin
+  http-address = ${buildout:http-address}
+  # change debug-mode to "on" to run in development mode
+  debug-mode = ${buildout:debug-mode}
+  # change verbose-security to "on" for detailed security
+  # errors while developing
+! verbose-security = off
+  # change deprecation-warnings to "on" to get log warnings
+  # for deprecated usages.
+  deprecation-warnings = off
+--- 221,233 ----
+  zope2-location = ${zope2:location}
+  # The line below sets only the initial password. It will not change an
+  # existing password.
+! user = ${zopeserver:user}
+  http-address = ${buildout:http-address}
+  # change debug-mode to "on" to run in development mode
+  debug-mode = ${buildout:debug-mode}
+  # change verbose-security to "on" for detailed security
+  # errors while developing
+! verbose-security = ${zopeserver:verbose-security}
+  # change deprecation-warnings to "on" to get log warnings
+  # for deprecated usages.
+  deprecation-warnings = off
+***************
+*** 319,322 ****
+  plone.recipe.unifiedinstaller = 0.9
+  collective.recipe.zope2cluster = 1.0
+  PasteDeploy = 1.3.3
+! zc.recipe.egg = 1.2.2
+\ No hay ningún carácter de nueva línea al final del fichero
+--- 319,322 ----
+  plone.recipe.unifiedinstaller = 0.9
+  collective.recipe.zope2cluster = 1.0
+  PasteDeploy = 1.3.3
+! zc.recipe.egg = 1.2.2
