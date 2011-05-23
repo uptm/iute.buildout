@@ -11,7 +11,7 @@ from zope.component import getUtility
 from plone.app.viewletmanager.interfaces import IViewletSettingsStorage
 from plone.app.controlpanel.form import ControlPanelForm
 from zope.app.component.hooks import getSite
-from iute.themebase.utils import getProperties, mf as _
+from iute.themebase.utils import getProperties, IuteThemebaseMF as _
 from Products.CMFCore.utils import getToolByName
 from iute.themebase.config import *
 from iute.themebase.vocabularies import SearchableTextSourceBinder

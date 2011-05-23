@@ -20,23 +20,23 @@
 		/>
 
 	<browser:page
-	  	for="Products.CMFPlone.interfaces.IPloneSiteRoot"
 	  	name="iute-theme-base-manage-links"
+	  	for="Products.CMFPlone.interfaces.IPloneSiteRoot"
 	  	class=".managelinks.ManageLinks"
 			permission="cmf.ManagePortal"
 			layer="iute.themebase.browser.interfaces.IIUTEThemeLayer"
 	  />
 	<browser:page
-	  	for="*"
 	  	name="iute-search"
+	  	for="*"
 	  	class=".iutesearch.IUTESearch"
 		permission="zope2.View"
 		layer="iute.themebase.browser.interfaces.IIUTEThemeLayer"
 	  />
 
 	<browser:resource
-		file="pngie6fix.js"
 		name="iute.themebase.pngie6fix.js"
+		file="pngie6fix.js"
 		layer=".interfaces.IIUTEThemeLayer"
 	/>
 	

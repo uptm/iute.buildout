@@ -6,7 +6,8 @@ from plone.app.viewletmanager.interfaces import IViewletSettingsStorage
 from zope.component import getUtility
 from zope.app.component.hooks import getSite
 from zope.component import getMultiAdapter
-from uwosh.requirements.utils import getProperties
+from iute.requirements.utils import getProperties
+from iute.themebase.utils import IuteThemebaseMF as _
 from zLOG import LOG, WARNING
 from Products.CMFCore.utils import getToolByName
 
@@ -52,7 +53,7 @@ class ManageLinks(BrowserView):
     @memoize
     def portal_actions(self):
         
-        return [('Top Level Navigation', 'top_level_navigation'), ('Audience Navigation', 'audience_navigation'), ('Titan Services', 'titan_services')]
+        return [(_(u'Top Level Navigation'), 'top_level_navigation'), (_(u'Audience Navigation'), 'audience_navigation'), (_(u'Titan Services'), 'titan_services')]
         
     @memoize
     def get_links(self):

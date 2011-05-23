@@ -12,7 +12,8 @@ from plone.memoize.instance import memoize
 from Acquisition import aq_inner
 from DateTime.DateTime import DateTime
 from Products.CMFCore.utils import getToolByName
-from Products.CMFPlone import PloneMessageFactory as _
+#from Products.CMFPlone import PloneMessageFactory as _
+from iute.themebase.utils import IuteThemebaseMF as _
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.component import getMultiAdapter
 from plone.portlets.interfaces import IPortletDataProvider

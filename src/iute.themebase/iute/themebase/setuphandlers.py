@@ -3,7 +3,7 @@ from Products.CMFCore.utils import getToolByName
 from uwosh.core.utils import install
 
 dependencies = [
-    'uwosh.default'
+    'iute.default'
 ]
 
 def setupVarious(context):

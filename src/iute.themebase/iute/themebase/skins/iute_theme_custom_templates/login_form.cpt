@@ -78,14 +78,14 @@ If you do not have an account here, head over to the
 
         <div id="forgotten-password"
              tal:condition="python:checkPermission('Mail forgotten password', here)">
-            <h3 i18n:translate="box_forgot_password_option">
+            <h3 i18n:translate="heading_sign_in">
                 Please log in
             </h3>
-            <p i18n:translate="help_password_retrieval">
+            <p i18n:domain="iute.themebase" i18n:translate="help_password_retrieval">
                 To access this part of the site, you need to log in with your user name and password,
                 which will be the same as for your @uwosh.edu email account.
             </p>
-	    <p>
+	    <p i18n:domain="iute.themebase" i18n:translate="help_password">
 	         If your email address is <i>abc123@uwosh.edu</i>, your user name is <i>abc123</i> and your password is the same as for email.
 	    </p>
             
@@ -109,7 +109,7 @@ If you do not have an account here, head over to the
             <label i18n:translate="label_login_name"
                    tal:attributes="for ac_name">Login Name</label>
 
-            <div tal:content="error">Validation error output</div>
+            <div tal:content="error"><tal:comment replace="nothing">Validation error output</tal:comment></div>
 
             <input type="text"
                    size="15"
@@ -127,7 +127,7 @@ If you do not have an account here, head over to the
             <label i18n:translate="label_password"
                    tal:attributes="for ac_password">Password</label>
 
-            <div tal:content="error">Validation error output</div>
+            <div tal:content="error"><tal:comment replace="nothing">Validation error output</tal:comment></div>
 
             <input type="password"
                    size="15"
@@ -165,18 +165,26 @@ If you do not have an account here, head over to the
                    value="Log in"
                    i18n:attributes="value label_log_in;"
                    />
-                                                  <h3>Forgot Password?</h3>
-            <p>
+
+            <h3 i18n:translate="box_forgot_password_option">Forgot your password?</h3>
+            <p i18n:domain="iute.themebase" i18n:translate="">
               If you have a UW Oshkosh email account and you have forgotten your password, 
               call the Academic Computing Help Desk (920-424-3020) to reset it. 
             </p>
-	    <p>
-	      If you are still experiencing problems logging in, see <a href="http://www.uwosh.edu/ploneprojects/documentation/how-tos/how-to-fix-your-login-problem/" target="_blank">what else to try</a>.
+	    <p i18n:translate="">
+	      If you are still experiencing problems logging in, see 
+              <span i18n:name="click_here_to_to_fix_your_login_problem">
+                <a href="http://www.uwosh.edu/ploneprojects/documentation/how-tos/how-to-fix-your-login-problem/" 
+                   target="_blank" i18n:translate="">what else to try</a>
+              </span>.
 	    </p>
-            <p>
+            <p i18n:domain="iute.themebase" i18n:translate="">
               If you do not have a UW Oshkosh email account and you have forgotten your password, 
-              fill out our <a tal:attributes="href python:'mail_password_form?'+ztu.make_query(userid=login_name)"
-                       i18n:translate="label_click_here_to_retrieve">password retrieval form</a>.
+              fill out our 
+              <span i18n:name="click_here_to_retrieve">
+                <a tal:attributes="href python:'mail_password_form?'+ztu.make_query(userid=login_name)"
+                   i18n:translate="label_click_here_to_retrieve">password retrieval form</a>
+              </span>.
             </p>
 
         </div>

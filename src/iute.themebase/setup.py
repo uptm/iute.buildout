@@ -17,7 +17,7 @@ setup(name='iute.themebase',
       keywords='web zope plone theme IUTE',
       author='Leonardo J. Caballero G.',
       author_email='leonardocaballero@gmail.com',
-      url='http://svn.plone.org/svn/collective/',
+      url='https://plone-ve.googlecode.com/svn/trunk/PloneEduIUTE/src/iute.themebase/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['iute'],
@@ -25,7 +25,7 @@ setup(name='iute.themebase',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'uwosh.core>=0.3.5b1',
+          'iute.core>=0.3.5b1',
           'iute.default>=0.3.7b1',
           'plone.browserlayer'
           # -*- Extra requirements: -*-

@@ -1,10 +1,10 @@
-<div lang="en"
-     xml:lang="en"
-     xmlns="http://www.w3.org/1999/xhtml"
+<div xmlns="http://www.w3.org/1999/xhtml"
+     lang="en" xml:lang="en"
      xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:metal="http://xml.zope.org/namespaces/metal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-     i18n:domain="plone">
+     i18n:domain="iute.themebase">
+
   <fieldset tal:define="all_actions python: view.actions()">
     <legend i18n:translate="label_searchresults">Call To Actions</legend>
 
@@ -12,15 +12,15 @@
 		<table>
 			<input type="hidden" name="numberofactions" tal:attributes="value python: len(all_actions) + 1" />
 			<tr>
-				<th>Delete?</th>
-				<th>Text that shows up</th>
-				<th>Link it goes to</th>
-				<th>Open link in a new window?</th>
+				<th i18n:translate="">Delete?</th>
+				<th i18n:translate="">Text that shows up</th>
+				<th i18n:translate="">Link it goes to</th>
+				<th i18n:translate="">Open link in a new window?</th>
 			</tr>
 		<tal:actions tal:repeat="action all_actions">
 			<tr>
 				<td>
-					<input type="checkbox" tal:attributes="name string:actiondelete-${repeat/action/index};">
+					<input type="checkbox" tal:attributes="name string:actiondelete-${repeat/action/index};" />
 				</td>
 				<td>
 					<textarea tal:attributes="name string:actionname-${repeat/action/index};" cols="40" rows="1" tal:content="python: action[0]">
@@ -59,11 +59,11 @@
 		</table>
 <br />
 		<input type="submit"
-			name="updateSelection"
+			name="updateSelection" i18n:attributes="value"
 			value="Remove Selected Call To Actions"
 			/>
 		<input type="submit"
-			name="addRow"
+			name="addRow" i18n:attributes="value"
 			value="Add Call To Action"
 		/>
 

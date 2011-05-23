@@ -2,22 +2,25 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="iute.themebase">
 
-	<five:registerPackage package="." initialize=".initialize" />
+  <five:registerPackage package="." initialize=".initialize" />
 
-	<include package="iute.theme" />
- 	<include package=".browser" />
-  	<include package=".portlets" />
+  <include package="iute.theme" />
+  <include package=".browser" />
+  <include package=".portlets" />
 	
-	<include package="uwosh.core" />
-	<include package="plone.browserlayer" />
+  <include package="uwosh.core" />
+  <include package="plone.browserlayer" />
 	
 <!--	
-	only do this sort of thing for themes
-	in the __init__.py the registerDirectory method is
-	called to handle this.
-	<include file="skins.zcml" /> 
+  only do this sort of thing for themes
+  in the __init__.py the registerDirectory method is
+  called to handle this.
+  <include file="skins.zcml" /> 
 -->
- 	<include file="profiles.zcml" />
+  <include file="profiles.zcml" />
+
+  <i18n:registerTranslations directory="locales" />
 </configure>

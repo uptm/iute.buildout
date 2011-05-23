@@ -21,7 +21,7 @@ class ICallToAction(IPortletDataProvider):
 
     actions = schema.List(
         title = _(u"Call To Action"),
-        description = _(u""" """),
+        description = _(u""" A portlet that shows call to action links. """),
         required = True
     )
 

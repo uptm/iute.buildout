@@ -15,65 +15,54 @@
 		<table>
 			<tr>
 				<td>
-					<a href="http://www.gobiernoenlinea.ve/misc-view/index.pag" target="_blank">
-						<img border="0" alt="Gobierno en Linea"
+					<a href="http://www.gobiernoenlinea.ve/misc-view/index.pag" target="_blank" 
+                                           title="Gobierno en Linea" i18n:attributes="title">
+						<img border="0" alt="Gobierno en Linea" i18n:attributes="alt"
 						     tal:attributes="src string:${here/portal_url}/gobiernoenlinea.png" />
 					</a>					
 				</td>
 				<td>
-					<a href="http://www.mppeu.gob.ve/" target="_blank">
-						<img border="0"
+					<a href="http://www.mppeu.gob.ve/" target="_blank" 
+                                           title="Ministerio para el Poder Popular para la Educación Universitaria" i18n:attributes="title">
+						<img border="0" i18n:attributes="alt"
 						     alt="Ministerio para el Poder Popular para la Educación Universitaria"
 						     tal:attributes="src string:${here/portal_url}/mppeu.png" />
 
 					</a>					
 				</td>
 				<td>
-					<a href="http://www.opsu.gob.ve/?ir=opsu" target="_blank">
-						<img border="0"
+					<a href="http://www.opsu.gob.ve/?ir=opsu" target="_blank" 
+                                           title="Oficina de Planificación del Sector Universitario" i18n:attributes="title">
+						<img border="0" i18n:attributes="alt"
 						     alt="Oficina de Planificación del Sector Universitario"
 						     tal:attributes="src string:${here/portal_url}/opsu.png" />
 					</a>
 				</td>
 				<td>
-					<a href="http://www.opsu.gob.ve/?ir=cnu" target="_blank">
-						<img border="0"
+					<a href="http://www.opsu.gob.ve/?ir=cnu" target="_blank" 
+                                           title="Consejo Nacional de Universidades" i18n:attributes="title">
+						<img border="0" i18n:attributes="alt"
 						     alt="Consejo Nacional de Universidades"
 						     tal:attributes="src string:${here/portal_url}/cnu.png" />
 					</a>
 				</td>
 				<td>
-					<a href="http://www.ipasme.gob.ve/" target="_blank">
-						<img border="0"
+					<a href="http://www.ipasme.gob.ve/" target="_blank" 
+                                           title="Instituto de Previsión y Asistencia Social para el Personal del Ministerio de Educación" i18n:attributes="title">
+						<img border="0" i18n:attributes="alt"
 						     alt="Instituto de Previsión y Asistencia Social para el Personal del Ministerio de Educación"
 						     tal:attributes="src string:${here/portal_url}/ipasme.png" />
 					</a>
 				</td>
 				<td>
 
-					<a href="http://www.fames.gov.ve/" target="_blank">
-						<img border="0"
+					<a href="http://www.fames.gov.ve/" target="_blank" 
+                                           title="Fundación Gran Maríscal de Ayacucho" i18n:attributes="title">
+						<img border="0" i18n:attributes="alt"
 						     alt="Fundación Gran Maríscal de Ayacucho"
 						     tal:attributes="src string:${here/portal_url}/fames.png" />
 					</a>
 				</td>
-<!--
-				<td>
-					<a href="http://www.uwosh.edu/chancellor/systemofaccountability/" target="_blank">
-						<img tal:attributes="src string:${here/portal_url}/collegePortrait.gif" />
-					</a>
-				</td>
-				<td>
-					<a href="http://www.wisconsin.edu/" target="_blank">
-						<img tal:attributes="src string:${here/portal_url}/uwSystem.gif" />
-					</a>
-				</td>
-				<td>
-					<a href="http://www.uwosh.edu/" target="_blank">
-						<img tal:attributes="src string:${here/portal_url}/uwoLogo.gif" />
-					</a>
-				</td>
--->
 			</tr>
 		</table>
 	</div>

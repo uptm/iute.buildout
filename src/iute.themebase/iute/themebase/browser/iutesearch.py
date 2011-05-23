@@ -21,7 +21,7 @@ class IUTESearch(BrowserView):
         if self.request.form.has_key('search_entire_campus'):
             if self.request.form['search_entire_campus'] == 'on':
                 #redirect on itself so we can get a unique search url to prevent caching
-                self.request.response.redirect('uwosh-search?%s' % self.urlencodedGoogleSearch())
+                self.request.response.redirect('iute-search?%s' % self.urlencodedGoogleSearch())
             else:
                 return self.template()
             

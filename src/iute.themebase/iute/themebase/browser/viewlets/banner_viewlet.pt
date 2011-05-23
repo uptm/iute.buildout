@@ -1,15 +1,22 @@
-<div id="iute_banner_body">
+<div id="iute_banner_body" i18n:domain="iute.themebase">
 	<div id="iute_logo">
+<!--
 		<a tal:attributes="href here/@@iute_tools/iute_home_url"><img tal:attributes="src string: ${here/portal_url}/logo.png"></a>
+-->
+		<a tal:attributes="href string: ${here/portal_url}/" 
+                   title="Instituto Universitario Tecnológico de Ejido" i18n:attributes="title">
+                        <img tal:attributes="src string: ${here/portal_url}/logo.png" 
+                             alt="Instituto Universitario Tecnológico de Ejido" i18n:attributes="alt" />
+                </a>
 	</div>
 	<div id="audienceNav">
 		<ul>
 			<tal:actions tal:repeat="action view/audience_navigation">
         <li tal:attributes="class python: view.selected(action['url']) and action['id'] + 'AudienceNav' + ' selected' or action['id'] + 'AudienceNav'" >
             <a href=""
-               tal:attributes="href action/url;"
-							 tal:content="action/title"
-            ></a>
+               tal:attributes="href action/url;" 
+               tal:content="action/title">
+            </a>
         </li>
     	</tal:actions>
 		</ul>
@@ -25,14 +32,20 @@
 		tal:attributes="action string:${view/site_url}/iute-search"
 		onsubmit="return false;">
 		<div class="LSBox">
-	   		<input class="inputLabelActive" title="Search Campus" type="text" name="q" size="18"/>
-	   		<input class="searchButton" type="submit" value="Search"/>
+	   		<input class="inputLabelActive" type="text" name="q" size="18" title="Search Campus" i18n:attributes="title" />
+	   		<input class="searchButton" type="submit" value="Search" i18n:domain="plone" i18n:attributes="value label_search;" />
 			<div class="searchSection">
 				<input id="portal-searchbox-checkbox-campus" class="noborder"
 					type="checkbox" checked="true" name="search_entire_campus" />
-				<label for="portal-searchbox-checkbox-campus" style="cursor: pointer">
+
+				<label for="portal-searchbox-checkbox-campus" style="cursor: pointer" i18n:translate="">
 					search entire campus
 				</label>
+<!--
+				<label for="portal-searchbox-checkbox-campus" style="cursor: pointer">
+					buscar en todo el sitio
+				</label>
+-->
 			</div>
 	 	</div>
 	</form>
@@ -43,7 +56,7 @@
 
 	<div id="results_016914008736719096284:eascmls-b2u" style="display:none">
 	 	<div class="cse-closeResults">
-	   		<a>&times; Close</a>
+	   		<a i18n:translate="">&times; Close</a>
 	 	</div>
 	 	<div class="cse-resultsContainer"></div>
 	</div>
@@ -79,26 +92,32 @@
 			action="iute-search"
 			tal:attributes="action string:${view/site_url}/iute-search">
 
-			<label for="searchGadget" class="hiddenStructure" i18n:translate="text_search">
+			<label for="searchGadget" class="hiddenStructure" i18n:domain="plone" i18n:translate="text_search">
 				Search Site
 			</label>
 
 			<div class="LSBox">
 				<input 
 					name="SearchableText" type="text" size="18" value="" title="Search Site"
-					accesskey="4" i18n:attributes="title title_search_site;"
+					accesskey="4" i18n:domain="plone" i18n:attributes="title title_search_site;"
 					tal:attributes="value request/SearchableText|nothing;
 									id view/search_input_id"
 					class="inputLabel" 
 				/>
 
-				<input class="searchButton" type="submit" value="Search" i18n:attributes="value label_search;" />
+				<input class="searchButton" type="submit" value="Search" i18n:domain="plone" i18n:attributes="value label_search;" />
 				<div class="searchSection">
 					<input id="portal-searchbox-checkbox-site" class="noborder"
 						type="checkbox" name="search_entire_campus" />
-					<label for="portal-searchbox-checkbox-site" style="cursor: pointer">
+
+					<label for="portal-searchbox-checkbox-site" style="cursor: pointer" i18n:translate="">
 						search entire campus
 					</label>
+<!--
+					<label for="portal-searchbox-checkbox-site" style="cursor: pointer">
+						buscar en todo el sitio
+					</label>
+-->
 				</div>
 				<div class="LSResult" id="LSResult" style="">
 					<div class="LSShadow" id="LSShadow">

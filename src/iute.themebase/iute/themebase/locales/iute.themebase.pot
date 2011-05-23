@@ -1,0 +1,196 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-22 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: iute.themebase\n"
+
+#: ../../themebase/portlets/calltoaction.py:24
+msgid " A portlet that shows call to action links. "
+msgstr ""
+
+#: ../../theme/portlets/calltoaction.py:56
+#: ../../themebase/portlets/calltoaction.py:49
+#: ../../themebase/portlets/calltoactionwidget.pt:65
+msgid "Add Call To Action"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.py:56
+msgid "Audience Navigation"
+msgstr ""
+
+#: ../../theme/portlets/calltoaction.py:24
+#: ../../themebase/portlets/calltoaction.py:23
+msgid "Call To Action"
+msgstr ""
+
+#: ../../theme/portlets/calltoaction.py:30
+msgid "Call to action"
+msgstr ""
+
+#: ../../themebase/portlets/calltoactionwidget.pt:15
+msgid "Delete?"
+msgstr ""
+
+#: ../../theme/portlets/calltoaction.py:65
+#: ../../themebase/portlets/calltoaction.py:59
+msgid "Edit Call To Action"
+msgstr ""
+
+#: ../../themebase/skins/iute_theme_custom_templates/login_form.cpt:184
+msgid "If you do not have a UW Oshkosh email account and you have forgotten your password, fill out our ${click_here_to_retrieve}."
+msgstr ""
+
+#: ../../themebase/skins/iute_theme_custom_templates/login_form.cpt:170
+msgid "If you have a UW Oshkosh email account and you have forgotten your password, call the Academic Computing Help Desk (920-424-3020) to reset it."
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:12
+msgid "If you want more fine tuning of these links, you'll need to visit the zmi ${click_here_manage_portal_actions}."
+msgstr ""
+
+#: ../../themebase/portlets/calltoactionwidget.pt:17
+msgid "Link it goes to"
+msgstr ""
+
+#: ../../themebase/browser/viewlets/mainimage_viewlet.pt:6
+msgid "Main Image"
+msgstr ""
+
+#: ../../themebase/portlets/calltoactionwidget.pt:18
+msgid "Open link in a new window?"
+msgstr ""
+
+#: ../../themebase/portlets/calltoactionwidget.pt:61
+msgid "Remove Selected Call To Actions"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:119
+msgid "Save Link"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:109
+msgid "Should this link be displayed?"
+msgstr ""
+
+#: ../../theme/portlets/calltoaction.py:25
+msgid "Specify each "Call To Action" on a line with the name and url separated by a "|".  
+                            For example, "Link To Google|http://www.google.com" You can even add html in the name portion.
+                            An example of one with html would be, "Check out this<br />Special Thing | http://www.google.com" "
+msgstr ""
+
+#: ../../themebase/portlets/calltoactionwidget.pt:16
+msgid "Text that shows up"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:96
+msgid "This actual link as to where this should point."
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:82
+msgid "This is what will show up on the link."
+msgstr ""
+
+#: ../../themebase/browser/controlpanel.py:56
+msgid "This is where you can configure UW Oshkosh specific plone settings."
+msgstr ""
+
+#: ../../theme/portlets/calltoaction.py:57
+#: ../../themebase/portlets/calltoaction.py:50
+msgid "This portlet allows you to add call to actions."
+msgstr ""
+
+#: ../../themebase/browser/managelinks.py:56
+msgid "Titan Services"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:81
+msgid "Title"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.py:56
+msgid "Top Level Navigation"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:95
+msgid "URL"
+msgstr ""
+
+#: ../../themebase/browser/controlpanel.py:58
+msgid "UW Oshkosh Settings"
+msgstr ""
+
+#: ../../themebase/browser/controlpanel.py:57
+msgid "UW Oshkosh Theme Configuration"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:108
+msgid "Visible"
+msgstr ""
+
+#. Default: "If your email address is <i>abc123@uwosh.edu</i>, your user name is <i>abc123</i> and your password is the same as for email."
+#: ../../themebase/skins/iute_theme_custom_templates/login_form.cpt:88
+msgid "help_password"
+msgstr ""
+
+#. Default: "To access this part of the site, you need to log in with your user name and password, which will be the same as for your @uwosh.edu email account."
+#: ../../themebase/skins/iute_theme_custom_templates/login_form.cpt:84
+msgid "help_password_retrieval"
+msgstr ""
+
+#: ../../themebase/browser/managelinks.pt:13
+msgid "here"
+msgstr ""
+
+#: ../../themebase/profiles/default/actionicons.xml
+#: ../../themebase/profiles/default/controlpanel.xml
+msgid "iute link editor"
+msgstr ""
+
+#. Default: "password retrieval form"
+#: ../../themebase/skins/iute_theme_custom_templates/login_form.cpt:185
+msgid "label_click_here_to_retrieve"
+msgstr ""
+
+#. Default: "Call To Actions"
+#: ../../themebase/portlets/calltoactionwidget.pt:9
+msgid "label_searchresults"
+msgstr ""
+
+#. Default: "Up to Site Setup"
+#: ../../themebase/browser/managelinks.pt:22
+msgid "label_up_to_plone_setup"
+msgstr ""
+
+#. Default: "emergency"
+#: ../../themebase/browser/viewlets/colophon_viewlet.pt:41
+msgid "simpleemergency_configuration"
+msgstr ""
+
+#. Default: "Manage Links"
+#: ../../themebase/browser/managelinks.pt:19
+msgid "title_manage_contentrules"
+msgstr ""
+
+#. Default: "Edit link"
+#: ../../themebase/browser/managelinks.pt:63
+msgid "title_manage_edit_link"
+msgstr ""
+
+#. Default: "Select link to edit"
+#: ../../themebase/browser/managelinks.pt:41
+msgid "title_manage_select_link_edit"
+msgstr ""
+

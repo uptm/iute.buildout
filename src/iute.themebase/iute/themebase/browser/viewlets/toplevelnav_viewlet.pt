@@ -1,4 +1,4 @@
-<div id="top_level_navigation">
+<div id="top_level_navigation" i18n:domain="plone">
 	<ul tal:condition="python: view.top_level_navigation and len(view.top_level_navigation) > 0">
 		
 	<tal:actions tal:repeat="action python: view.top_level_navigation[:7]">
@@ -10,17 +10,26 @@
         </li>
     </tal:actions>
 	<li class=" small-textNav">
-        <a href="javascript:setBaseFontSize('smallText', 1);">Small Text</a>
+        <a href="javascript:setBaseFontSize('smallText', 1);"
+                                          title="Large Text"
+                                          i18n:attributes="title title_large_text;"
+                                          i18n:translate="large_text">Small Text</a>
     </li>
     <li class=" normal-textNav">
-        <a href="javascript:setBaseFontSize('', 1);">Normal Text</a>
+        <a href="javascript:setBaseFontSize('', 1);"
+                                           title="Normal Text"
+                                           i18n:attributes="title title_normal_text;"
+                                           i18n:translate="normal_text">Normal Text</a>
     </li>
     <li class=" large-textNav">
-        <a href="javascript:setBaseFontSize('largeText', 1);">Large Text</a>
+        <a href="javascript:setBaseFontSize('largeText', 1);"
+                                          title="Small Text"
+                                          i18n:attributes="title title_small_text;"
+                                          i18n:translate="small_text">Large Text</a>
     </li>
 
 
-	<tal:comment tal:replace="nothing">
+	<tal:comment replace="nothing">
 		The first link here should be the main titan services link
 	</tal:comment>
 	<tal:titan_services tal:condition="view/has_titan_services">
@@ -28,12 +37,12 @@
 		class="titan_servicesNav" 
 		tal:define="tsaction python: view.titan_services[0]">
         <a href=""
-			tal:content="tsaction/title"
-           	tal:attributes="href tsaction/url"
-        ></a>
+		tal:content="tsaction/title"
+           	tal:attributes="href tsaction/url">
+        </a>
 
 		<div id="titanServicesLinks">
-			<tal:comment tal:replace="nothing">
+			<tal:comment replace="nothing">
 				These are the rest of the titan services links.
 				Make sure you distinguish between the ids titanServicesLink and titanServicesLinks
 			</tal:comment>
@@ -41,9 +50,9 @@
 			<tal:tsaction tal:repeat="action python: view.titan_services[1:]">
 		        <li tal:attributes="class string: ${action/id}Nav" >
 		            <a href=""
-						tal:content="action/title"
+		               	tal:content="action/title"
 		               	tal:attributes="href action/url;">
-					</a>
+		            </a>
 		        </li>
 		    </tal:tsaction>
 			</ul>
@@ -52,5 +61,9 @@
     </li>
 	</tal:titan_services>
 	</ul>
+
+    <img tal:attributes="src string: ${here/portal_url}/encabezado.png" i18n:domain="iute.themebase" 
+         alt="Ministerio para el Poder Popular para la Educación Universitaria" i18n:attributes="alt" />
+
 </div>
 

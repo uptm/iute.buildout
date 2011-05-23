@@ -22,7 +22,6 @@ iute/theme/configure.zcml
 iute/theme/browser/__init__.py
 iute/theme/browser/configure.zcml
 iute/theme/browser/interfaces.py
-iute/theme/browser/interfaces.py~
 iute/theme/portlets/__init__.py
 iute/theme/portlets/calltoaction.pt
 iute/theme/portlets/calltoaction.py
