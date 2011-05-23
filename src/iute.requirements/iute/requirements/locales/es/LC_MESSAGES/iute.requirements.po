@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: iute.requirements\n"
+"POT-Creation-Date: 2011-05-22 04:20+0000\n"
+"PO-Revision-Date: 2011-05-22 08:09-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: Español <zope-es@aditel.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: iute.requirements\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#: ./configlet/iute-requirements.pt:46
+msgid "How to improve your site's Google page rank"
+msgstr "¿Como mejorar su posicionamiento de página en Google de su sitio Web?"
+
+#: ./configlet/iute-requirements.pt:46
+msgid "In addition, please submit your site url and site map to google. See ${click_here_to_improve_your_sites_google_page_rank}"
+msgstr "En adición, por favor, envie su dirección URL del sitio y mapa del sitio a Google. Para más información ${click_here_to_improve_your_sites_google_page_rank}"
+
+#: ./configlet/iute-requirements.pt:52
+msgid "Please enter the url to the plone project for this site. See ${click_here_url_plone_projects}"
+msgstr "Por favor, ingrese la dirección URL del proyecto Plone para este sitio. Para más información ${click_here_url_plone_projects}"
+
+#: ./configlet/iute-requirements.pt:50
+msgid "Plone Project URL"
+msgstr "Dirección URL del Proyecto Plone"
+
+#: ./configlet/iute-requirements.pt:64
+msgid "Ready To Go Live"
+msgstr "Listo para Publicar"
+
+#: ./configlet/iute-requirements.pt:80
+msgid "The site has already been set to go live."
+msgstr "El sitio ya esta listo para ser enviado a ser publicado."
+
+#: ./browser/allowedlive.pt:3
+msgid "Warning"
+msgstr "Advertencia"
+
+#: ./configlet/iute-requirements.pt:74
+msgid "You cannot submit this site is ready to go live until you fix remaining issues."
+msgstr "Usted no puede enviar este sitio para ser publicado hasta que usted corrija los errores remanentes."
+
+#: ./configlet/iute-requirements.pt:52
+msgid "for information."
+msgstr "para mayor información."
+
+#. Default: "UW Oshkosh Requirements"
+#: ./configlet/iute-requirements.pt:11
+msgid "title_manage_contentrules"
+msgstr "Requerimientos"
+

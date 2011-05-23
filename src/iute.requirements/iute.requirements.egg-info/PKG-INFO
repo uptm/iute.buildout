@@ -1,0 +1,29 @@
+Metadata-Version: 1.0
+Name: uwosh.requirements
+Version: 0.2.3b1
+Summary: this products provides basic requirements to all uwosh plone site
+Home-page: http://svn.plone.org/svn/plone/plone.example
+Author: Nathan Van Gheem
+Author-email: vangheem@gmail.com
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        Changelog
+        =========
+        0.2.3b1
+        -----------------------
+        *added checks for JS debugging, CacheSetup installed, CacheFu enabled, and use of campus login_form
+        
+        0.1.7
+        -----------------------
+        *made it so requirements can be conditionally used
+        
+        
+Keywords: uwosh requirements
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

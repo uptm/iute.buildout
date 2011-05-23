@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+	<browser:page
+	  	for="*"
+	  	name="iute-requirements"
+	  	class=".configlet.UWOshRequirementsConfiglet"
+		permission="cmf.ManagePortal"
+		layer="iute.requirements.interfaces.IUWOshRequirementsLayer"
+	  />
+	
+</configure>
