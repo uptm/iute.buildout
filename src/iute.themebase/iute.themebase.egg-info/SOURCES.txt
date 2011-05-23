@@ -65,6 +65,10 @@ iute/themebase/browser/viewlets/toplevelnav_viewlet.pt
 iute/themebase/legacy/__init__.py
 iute/themebase/legacy/browser/__init__.py
 iute/themebase/legacy/browser/interfaces.py
+iute/themebase/locales/iute.themebase.pot
+iute/themebase/locales/es/LC_MESSAGES/iute.themebase.mo
+iute/themebase/locales/es/LC_MESSAGES/iute.themebase.po
+iute/themebase/locales/es/LC_MESSAGES/iute.themebase.po~
 iute/themebase/portlets/__init__.py
 iute/themebase/portlets/calltoaction.pt
 iute/themebase/portlets/calltoaction.py
