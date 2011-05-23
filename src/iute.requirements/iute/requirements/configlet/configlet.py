@@ -11,7 +11,7 @@ from iute.requirements.utils import getProperties
 from zLOG import LOG, WARNING
 from iute.requirements import check
 
-class UWOshRequirementsConfiglet(BrowserView):
+class IUTERequirementsConfiglet(BrowserView):
     """Manage rules in a the global rules container
     """
     

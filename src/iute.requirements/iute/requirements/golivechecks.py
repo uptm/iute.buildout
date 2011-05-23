@@ -5,7 +5,7 @@ from zope.interface import implements
 from zope.component import getUtility
 from Products.Five.testbrowser import Browser
 from Products.CMFCore.utils import getToolByName
-from uwosh.core.utils import *
+from iute.core.utils import *
 from iute.requirements.utils import IuteRequirementsMF as _
 
 CHECKS = []
@@ -21,7 +21,7 @@ class CheckEmail:
     
     name = _(u"Email")
     description = _(u"Must set site from address in Mail Settings")
-    fixinginfo = _(u"""Go to <a href="@@mail-controlpanel">Mail Settings</a> and set the required information""")
+    fixinginfo = _(u"""Go to <a href='@@mail-controlpanel'>Mail Settings</a> and set the required information.""")
     
     def use(self):
         """
@@ -42,8 +42,8 @@ class CheckShouldShowUWBanner:
     implements(IGoLiveCheck)
     
     name = _(u"Show Banner")
-    description = _(u"Must show UW Oshkosh Banner")
-    fixinginfo = _(u""" Go to <a href="@@uwosh.theme.configuration">iute theme configuration</a> and show the banner """)
+    description = _(u"Must show IUTE Banner")
+    fixinginfo = _(u""" Go to <a href='@@iute.theme.configuration'>iute theme configuration</a> and show the banner. """)
     
     def use(self):
         return has.product("iute.themebase").installed()
@@ -52,7 +52,7 @@ class CheckShouldShowUWBanner:
                     
         site = getSite()
         
-        viewlet = "uwosh.theme.base.banner"
+        viewlet = "iute.theme.base.banner"
         manager = "plone.portaltop"
 
         storage = getUtility(IViewletSettingsStorage)
@@ -68,7 +68,7 @@ class CheckShouldShowSearchBox:
     
     name = _(u"Show Search Box")
     description = _(u"Must show search box")
-    fixinginfo = _(u""" Go to <a href="@@manage-viewlets">manage viewlets</a> and show the search box """)
+    fixinginfo = _(u""" Go to <a href='@@manage-viewlets'>manage viewlets</a> and show the search box. """)
     
     def use(self):
         return True
@@ -88,12 +88,12 @@ class CheckShouldShowSearchBox:
 #depreciated since the search is now in the banner viewlet
 #registerCheck(CheckShouldShowSearchBox)
 
-class CheckShouldShowUWOshFooter:
+class CheckShouldShowIUTEFooter:
     implements(IGoLiveCheck)
     
-    name = _(u"Show UWOsh Footer")
-    description = _(u"Must show UW Oshkosh footer")
-    fixinginfo = _(u""" Go to <a href="@@manage-viewlets">manage viewlets</a> and show the uwosh.theme.base.footer viewlet """)
+    name = _(u"Show IUTE Footer")
+    description = _(u"Must show IUTE footer")
+    fixinginfo = _(u""" Go to <a href='@@manage-viewlets'>manage viewlets</a> and show the iute.theme.base.footer viewlet. """)
     
     def use(self):
         return has.product("iute.themebase").installed()
@@ -101,7 +101,7 @@ class CheckShouldShowUWOshFooter:
     def passes(self):
         site = getSite()
         
-        viewlet = "uwosh.theme.base.footer"
+        viewlet = "iute.theme.base.footer"
         manager = "plone.portalfooter"
 
         storage = getUtility(IViewletSettingsStorage)
@@ -110,14 +110,14 @@ class CheckShouldShowUWOshFooter:
 
         return viewlet not in hidden
 
-#registerCheck(CheckShouldShowUWOshFooter)
+#registerCheck(CheckShouldShowIUTEFooter)
 
 class CheckNeedsClickableLinkInFooter:
     implements(IGoLiveCheck)
     
     name = _(u"Clickable Link In Footer")
     description = _(u"Must have clickable link in footer")
-    fixinginfo = _(u""" Go to <a href="@@uwosh.theme.configuration">iute theme configuration</a> and add link to uwosh.edu in the footer """)
+    fixinginfo = _(u""" Go to <a href='@@iute.theme.configuration'>iute theme configuration</a> and add link to www.iute.tec.ve in the footer. """)
     
     def use(self):
         return has.product("iute.theme").installed()
@@ -134,7 +134,7 @@ class CheckNeedsClickableLinkInFooter:
         if not footer or len(footer) == 0:
             return False
 
-        if footer.find('href=') >= 0 and footer.find('uwosh.edu') >= 0:
+        if footer.find('href=') >= 0 and footer.find('www.iute.tec.ve') >= 0:
             return True
         else:
             return False
@@ -147,7 +147,7 @@ class CheckNeedsSiteMapAccessiblityAndContactLinks:
     
     name = _(u"Missing Required Links")
     description = _(u"Must show site map, accessiblity, and contact links on page")
-    fixinginfo = _(u""" Go to <a href="manage">ZMI</a> and the links back in portal_actions """)
+    fixinginfo = _(u""" Go to <a href='portal_actions/manage_main'>ZMI</a> and the links back in portal_actions. """)
     
     def use(self):
         return True
@@ -178,7 +178,7 @@ class CheckViewAbout:
     
     name = _(u"View About")
     description = _(u"Anyone must be allowed to view about information")
-    fixinginfo = _(u""" Go to <a href="@@security-controlpanel">security settings</a> and check "Allow anyone to view 'about' information" """)
+    fixinginfo = _(u""" Go to <a href='@@security-controlpanel'>security settings</a> and check 'Allow anyone to view 'about' information'. """)
     
     def use(self):
         return True
@@ -196,7 +196,7 @@ class CheckExposeSiteMap:
     
     name = _(u"Expose sitemap.xml.gz")
     description = _(u"Must expose site map")
-    fixinginfo = _(u""" Go to <a href="@@site-controlpanel">site settings</a> and check "Expose sitemap.xml.gz in the portal root" """)
+    fixinginfo = _(u""" Go to <a href='@@site-controlpanel'>site settings</a> and check 'Expose sitemap.xml.gz in the portal root'. """)
     
     def use(self):
         return True
@@ -214,7 +214,7 @@ class CheckSiteDescription:
     
     name = _(u"Site Description")
     description = _(u"Must have a site description")
-    fixinginfo = _(u""" Go to <a href="@@site-controlpanel">site settings</a> and fill in a site description """)
+    fixinginfo = _(u""" Go to <a href='@@site-controlpanel'>site settings</a> and fill in a site description. """)
     
     def use(self):
         return True
@@ -230,7 +230,7 @@ class CheckCSSDebugging:
 
     name = _(u"CSS Debugging")
     description = _(u"Must have CSS debugging turned off")
-    fixinginfo = _(u""" Go to <a href="manage">ZMI</a> -> portal_css and uncheck "Debug/development mode" """
+    fixinginfo = _(u""" Go to <a href='portal_css/manage_cssForm'>ZMI</a> -> portal_css and uncheck 'Debug/development mode'. """)
 
     def use(self):
         return True
@@ -247,7 +247,7 @@ class CheckJSDebugging:
 
     name = _(u"JS Debugging")
     description = _(u"Must have JS debugging turned off")
-    fixinginfo = _(u""" Go to <a href="manage">ZMI</a> -> portal_javascripts and uncheck "Debug/development mode" """
+    fixinginfo = _(u""" Go to <a href='portal_javascripts/manage_jsForm'>ZMI</a> -> portal_javascripts and uncheck 'Debug/development mode'. """)
 
     def use(self):
         return True
@@ -264,7 +264,7 @@ class CheckCacheSetupInstalled:
 
     name = _(u"CacheSetup Installed")
     description = _(u"Must have CacheSetup installed")
-    fixinginfo = _(u""" Go to <a href="prefs_install_products_form">Add-On Products</a> -> install CacheSetup """
+    fixinginfo = _(u""" Go to <a href='prefs_install_products_form'>Add-On Products</a> -> install CacheSetup. """)
 
     def use(self):
         return True
@@ -281,7 +281,7 @@ class CheckCacheFuEnabled:
 
     name = _(u"CacheFu Enabled")
     description = _(u"Must have CacheFu enabled")
-    fixinginfo = _(u""" Go to the <a href="portal_cache_settings">Cache Configuration Tool</a> -> and check "Enable CacheFu" """
+    fixinginfo = _(u""" Go to the <a href='portal_cache_settings'>Cache Configuration Tool</a> -> and check 'Enable CacheFu'. """)
     
 
 
@@ -302,7 +302,7 @@ class CheckNotLetUsersSelectOwnPasswords:
 
     name = _(u"Let Users Select Passwords")
     description = _(u"Must not let users select their own password")
-    fixinginfo = _(u""" Go to <a href="@@security-controlpanel">site security</a> and uncheck the box labled "Let users select their own passwords" """
+    fixinginfo = _(u""" Go to <a href='@@security-controlpanel'>site security</a> and uncheck the box labled 'Let users select their own passwords'. """)
 
     def use(self):
         return True
@@ -318,8 +318,8 @@ class CheckMailHostMustBeSet:
     implements(IGoLiveCheck)
 
     name = _(u"Mail Server")
-    description = _(u"Mail Server host must be set to smtp.uwosh.edu")
-    fixinginfo = _(u""" Go to <a href="@@mail-controlpanel">mail settings</a> enter "smtp.uwosh.edu" as the mail host. """
+    description = _(u"Mail Server host must be set to smtp.iute.tec.ve")
+    fixinginfo = _(u""" Go to <a href='@@mail-controlpanel'>mail settings</a> enter 'smtp.iute.tec.ve' as the mail host. """)
 
     def use(self):
         return True
@@ -327,7 +327,7 @@ class CheckMailHostMustBeSet:
     def passes(self):
         site = getSite()
 
-        return site.MailHost.smtp_host == "smtp.uwosh.edu"
+        return site.MailHost.smtp_host == "smtp.iute.tec.ve"
 
 registerCheck(CheckMailHostMustBeSet)
 
@@ -336,7 +336,7 @@ class CheckLoginFormInCustom:
     
     name = _(u"Use Campus Login Form")
     description = _(u"Must use the campus login form")
-    fixinginfo = _(u""" Go to <a href="manage/portal_skins/custom">the custom folder</a> and delete login_form """)
+    fixinginfo = _(u""" Go to <a href='portal_skins/custom/manage_main'>the custom folder</a> and delete login_form. """)
     
     def use(self):
         return has.product("iute.themebase").installed()
@@ -354,7 +354,7 @@ class CheckMustClickReadyToGoLive:
 
     name = _(u"Go Live")
     description = _(u"Notify iute staff you are ready to go live")
-    fixinginfo = _(u""" Go to <a href="@@iute-requirements">iute requirements</a>, enter the plone project url and click "ready to go live" """)
+    fixinginfo = _(u""" Go to <a href='@@iute-requirements'>iute requirements</a>, enter the plone project url and click 'ready to go live'. """)
 
     def use(self):
         return True
@@ -362,7 +362,7 @@ class CheckMustClickReadyToGoLive:
     def passes(self):
         site = getSite()
 
-        viewlet = "uwosh.allowedlive"
+        viewlet = "iute.allowedlive"
         manager = "plone.portaltop"
 
         storage = getUtility(IViewletSettingsStorage)
@@ -372,3 +372,4 @@ class CheckMustClickReadyToGoLive:
         return viewlet in hidden
 
 registerCheck(CheckMustClickReadyToGoLive)
+

@@ -1,15 +1,17 @@
 Metadata-Version: 1.0
-Name: uwosh.requirements
+Name: iute.requirements
 Version: 0.2.3b1
-Summary: this products provides basic requirements to all uwosh plone site
-Home-page: http://svn.plone.org/svn/plone/plone.example
-Author: Nathan Van Gheem
-Author-email: vangheem@gmail.com
+Summary: this products provides basic requirements to all iute plone site
+Home-page: https://plone-ve.googlecode.com/svn/trunk/PloneEduIUTE/src/iute.requirements/
+Author: Leonardo J. Caballero G.
+Author-email: leonardocaballero@gmail.com
 License: GPL
 Description: Introduction
         ============
         
+        A fork package from uwosh.requirements for IUTE Website
         
+        this products provides basic requirements to all iute plone site
         
         Changelog
         =========
@@ -22,7 +24,7 @@ Description: Introduction
         *made it so requirements can be conditionally used
         
         
-Keywords: uwosh requirements
+Keywords: web zope plone theme IUTE
 Platform: UNKNOWN
 Classifier: Framework :: Plone
 Classifier: Programming Language :: Python

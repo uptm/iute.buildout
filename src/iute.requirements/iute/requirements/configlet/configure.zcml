@@ -5,9 +5,9 @@
 	<browser:page
 	  	for="*"
 	  	name="iute-requirements"
-	  	class=".configlet.UWOshRequirementsConfiglet"
+	  	class=".configlet.IUTERequirementsConfiglet"
 		permission="cmf.ManagePortal"
-		layer="iute.requirements.interfaces.IUWOshRequirementsLayer"
+		layer="iute.requirements.interfaces.IIUTERequirementsLayer"
 	  />
 	
 </configure>

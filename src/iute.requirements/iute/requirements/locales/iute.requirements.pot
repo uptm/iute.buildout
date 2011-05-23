@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-05-22 13:27+0000\n"
+"POT-Creation-Date: 2011-05-22 22:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,68 +17,68 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: iute.requirements\n"
 
-#: ../golivechecks.py:322
-msgid " Go to <a href="@@mail-controlpanel">mail settings</a> enter "smtp.uwosh.edu" as the mail host. "
-msgstr ""
-
-#: ../golivechecks.py:71
-msgid " Go to <a href="@@manage-viewlets">manage viewlets</a> and show the search box "
-msgstr ""
-
-#: ../golivechecks.py:96
-msgid " Go to <a href="@@manage-viewlets">manage viewlets</a> and show the uwosh.theme.base.footer viewlet "
-msgstr ""
-
-#: ../golivechecks.py:181
-msgid " Go to <a href="@@security-controlpanel">security settings</a> and check "Allow anyone to view 'about' information" "
-msgstr ""
-
-#: ../golivechecks.py:305
-msgid " Go to <a href="@@security-controlpanel">site security</a> and uncheck the box labled "Let users select their own passwords" "
-msgstr ""
-
-#: ../golivechecks.py:199
-msgid " Go to <a href="@@site-controlpanel">site settings</a> and check "Expose sitemap.xml.gz in the portal root" "
-msgstr ""
-
-#: ../golivechecks.py:217
-msgid " Go to <a href="@@site-controlpanel">site settings</a> and fill in a site description "
-msgstr ""
-
 #: ../golivechecks.py:357
-msgid " Go to <a href="@@uwosh-requirements">uwosh requirements</a>, enter the plone project url and click "ready to go live" "
+msgid " Go to <a href='@@iute-requirements'>iute requirements</a>, enter the plone project url and click 'ready to go live'. "
 msgstr ""
 
 #: ../golivechecks.py:120
-msgid " Go to <a href="@@uwosh.theme.configuration">uwosh theme configuration</a> and add link to uwosh.edu in the footer "
+msgid " Go to <a href='@@iute.theme.configuration'>iute theme configuration</a> and add link to www.iute.tec.ve in the footer. "
 msgstr ""
 
 #: ../golivechecks.py:46
-msgid " Go to <a href="@@uwosh.theme.configuration">uwosh theme configuration</a> and show the banner "
+msgid " Go to <a href='@@iute.theme.configuration'>iute theme configuration</a> and show the banner. "
+msgstr ""
+
+#: ../golivechecks.py:322
+msgid " Go to <a href='@@mail-controlpanel'>mail settings</a> enter 'smtp.iute.tec.ve' as the mail host. "
+msgstr ""
+
+#: ../golivechecks.py:96
+msgid " Go to <a href='@@manage-viewlets'>manage viewlets</a> and show the iute.theme.base.footer viewlet. "
+msgstr ""
+
+#: ../golivechecks.py:71
+msgid " Go to <a href='@@manage-viewlets'>manage viewlets</a> and show the search box. "
+msgstr ""
+
+#: ../golivechecks.py:181
+msgid " Go to <a href='@@security-controlpanel'>security settings</a> and check 'Allow anyone to view 'about' information'. "
+msgstr ""
+
+#: ../golivechecks.py:305
+msgid " Go to <a href='@@security-controlpanel'>site security</a> and uncheck the box labled 'Let users select their own passwords'. "
+msgstr ""
+
+#: ../golivechecks.py:199
+msgid " Go to <a href='@@site-controlpanel'>site settings</a> and check 'Expose sitemap.xml.gz in the portal root'. "
+msgstr ""
+
+#: ../golivechecks.py:217
+msgid " Go to <a href='@@site-controlpanel'>site settings</a> and fill in a site description. "
 msgstr ""
 
 #: ../golivechecks.py:233
-msgid " Go to <a href="manage">ZMI</a> -> portal_css and uncheck "Debug/development mode" "
+msgid " Go to <a href='manage'>ZMI</a> -> portal_css and uncheck 'Debug/development mode'. "
 msgstr ""
 
 #: ../golivechecks.py:250
-msgid " Go to <a href="manage">ZMI</a> -> portal_javascripts and uncheck "Debug/development mode" "
+msgid " Go to <a href='manage'>ZMI</a> -> portal_javascripts and uncheck 'Debug/development mode'. "
 msgstr ""
 
 #: ../golivechecks.py:150
-msgid " Go to <a href="manage">ZMI</a> and the links back in portal_actions "
+msgid " Go to <a href='manage'>ZMI</a> and the links back in portal_actions. "
 msgstr ""
 
 #: ../golivechecks.py:339
-msgid " Go to <a href="manage/portal_skins/custom">the custom folder</a> and delete login_form "
+msgid " Go to <a href='manage/portal_skins/custom'>the custom folder</a> and delete login_form. "
 msgstr ""
 
 #: ../golivechecks.py:267
-msgid " Go to <a href="prefs_install_products_form">Add-On Products</a> -> install CacheSetup "
+msgid " Go to <a href='prefs_install_products_form'>Add-On Products</a> -> install CacheSetup. "
 msgstr ""
 
 #: ../golivechecks.py:284
-msgid " Go to the <a href="portal_cache_settings">Cache Configuration Tool</a> -> and check "Enable CacheFu" "
+msgid " Go to the <a href='portal_cache_settings'>Cache Configuration Tool</a> -> and check 'Enable CacheFu'. "
 msgstr ""
 
 #: ../golivechecks.py:180
@@ -114,7 +114,7 @@ msgid "Go Live"
 msgstr ""
 
 #: ../golivechecks.py:24
-msgid "Go to <a href="@@mail-controlpanel">Mail Settings</a> and set the required information"
+msgid "Go to <a href='@@mail-controlpanel'>Mail Settings</a> and set the required information."
 msgstr ""
 
 #: ../configlet/iute-requirements.pt:46
@@ -138,7 +138,7 @@ msgid "Mail Server"
 msgstr ""
 
 #: ../golivechecks.py:321
-msgid "Mail Server host must be set to smtp.uwosh.edu"
+msgid "Mail Server host must be set to smtp.iute.tec.ve"
 msgstr ""
 
 #: ../golivechecks.py:148
@@ -182,11 +182,11 @@ msgid "Must set site from address in Mail Settings"
 msgstr ""
 
 #: ../golivechecks.py:45
-msgid "Must show UW Oshkosh Banner"
+msgid "Must show IUTE Banner"
 msgstr ""
 
 #: ../golivechecks.py:95
-msgid "Must show UW Oshkosh footer"
+msgid "Must show IUTE footer"
 msgstr ""
 
 #: ../golivechecks.py:70
@@ -202,7 +202,7 @@ msgid "Must use the campus login form"
 msgstr ""
 
 #: ../golivechecks.py:356
-msgid "Notify uwosh staff you are ready to go live"
+msgid "Notify iute staff you are ready to go live"
 msgstr ""
 
 #: ../configlet/iute-requirements.pt:52
@@ -221,12 +221,12 @@ msgstr ""
 msgid "Show Banner"
 msgstr ""
 
-#: ../golivechecks.py:69
-msgid "Show Search Box"
+#: ../golivechecks.py:94
+msgid "Show IUTE Footer"
 msgstr ""
 
-#: ../golivechecks.py:94
-msgid "Show UWOsh Footer"
+#: ../golivechecks.py:69
+msgid "Show Search Box"
 msgstr ""
 
 #: ../golivechecks.py:215
