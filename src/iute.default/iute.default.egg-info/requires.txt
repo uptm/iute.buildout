@@ -1,4 +1,4 @@
 setuptools
-uwosh.requirements>=0.2b1
-uwosh.core>=0.3.4b1
+iute.requirements>=0.2b1
+iute.core>=0.3.4b1
 plone.browserlayer

@@ -2,15 +2,18 @@ Metadata-Version: 1.0
 Name: iute.default
 Version: 0.4.4
 Summary: default settings for iute plone sites
-Home-page: http://svn.plone.org/svn/plone/plone.example
-Author: Nathan Van Gheem
-Author-email: vangheem@gmail.com
+Home-page: https://plone-ve.googlecode.com/svn/trunk/PloneEduIUTE/src/iute.default
+Author: Leonardo J. Caballero G.
+Author-email: leonardocaballero@gmail.com
 License: GPL
 Description: Introduction
         ============
+        
+        A fork package from uwosh.default for IUTE Website
+        
         What it does:
         
-        * installs uwosh.requirements
+        * installs iute.requirements
         * installs top_level_navigation portal actions
         * installs audience_navigation portal actions
         * installs titan_services portal actions
@@ -30,6 +33,7 @@ Description: Introduction
         Use http://validator.w3.org/checklink to do a thorough check on links and make sure you select the
         "Check linked documents recursively" option so it will traverse the whole site for you returning
         a listing of errors.
+        
         Changelog
         =========
         

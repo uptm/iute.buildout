@@ -1,8 +1,11 @@
 Introduction
 ============
+
+A fork package from uwosh.default for IUTE Website
+
 What it does:
 
-* installs uwosh.requirements
+* installs iute.requirements
 * installs top_level_navigation portal actions
 * installs audience_navigation portal actions
 * installs titan_services portal actions
