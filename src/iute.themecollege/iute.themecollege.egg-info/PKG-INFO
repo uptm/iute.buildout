@@ -1,0 +1,37 @@
+Metadata-Version: 1.0
+Name: iute.themecollege
+Version: 0.3
+Summary: An installable theme for Plone 3.0
+Home-page: https://plone-ve.googlecode.com/svn/trunk/PloneEduIUTE/src/iute.themecollege/
+Author: Leonardo J. Caballero G.
+Author-email: leonardocaballero@gmail.com
+License: GPL
+Description: Introduction
+        ============
+        
+        This is a theme package that extends the iute.themebase package to provide a Plone theme suitable for Colleges.
+        
+        Changelog
+        =========
+        
+        0.3
+        ---
+        
+        * updates how it handles dependencies
+        
+        * add metadata files
+        
+        
+        0.2.13b1
+        --------
+        
+        * topnav and audience nav and footer links, white uw oshkosh
+        square link now look for portal property iute_home_url if
+        set by uwosh.themecollege
+        [Kim Nyugen]
+        
+Keywords: web zope plone theme IUTE
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

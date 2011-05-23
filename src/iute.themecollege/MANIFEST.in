@@ -1,0 +1,2 @@
+recursive-include iute *
+global-exclude *pyc

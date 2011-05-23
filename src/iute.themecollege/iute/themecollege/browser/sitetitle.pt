@@ -1,0 +1,6 @@
+<div id="collegeViewlet" i18n:domain="iute.themecollege">
+  <a tal:attributes="href here/portal_url">
+    <h1 id="organizationType" tal:content="python:here.organization_type">College of</h1>
+    <h1 id="organization" tal:content="view/title" i18n:name="organization_title" />
+  </a>
+</div>
