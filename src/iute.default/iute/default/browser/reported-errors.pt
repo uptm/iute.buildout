@@ -4,21 +4,21 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
       metal:use-macro="here/main_template/macros/master"
-      i18n:domain="plone">
+      i18n:domain="iute.default">
 <body>
 
 <metal:main fill-slot="main">
     <tal:main-macro metal:define-macro="main"
            tal:define="templateId template/getId;">
            
-     <table summary="Errors" class="listing" tal:condition="not: view/error_to_view">
+     <table summary="Errors" i18n:attributes="summary" class="listing" tal:condition="not: view/error_to_view">
        <thead>
        <tr class="odd">
-         <th>URL</th>
-         <th>Referrer</th>
-         <th>last reported</th>
-         <th>number reported</th>
-         <th>status</th>
+         <th i18n:translate="">URL</th>
+         <th i18n:translate="">Referrer</th>
+         <th i18n:translate="">last reported</th>
+         <th i18n:translate="">number reported</th>
+         <th i18n:translate="">status</th>
        </tr>
        </thead>
          <tbody tal:define="errors view/get_errors">
@@ -36,15 +36,15 @@
      </table>
 
      <dl tal:condition="view/error_to_view" tal:define="error view/get_error; url view/error_to_view">
-       <dt>URL</dt>
+       <dt i18n:translate="">URL</dt>
        <dd tal:content="python: url" />
-       <dt>last reported</dt>
+       <dt i18n:translate="">last reported</dt>
        <dd tal:content="error/last_reported/pCommonZ" />
-       <dt>number reported</dt>
+       <dt i18n:translate="">number reported</dt>
        <dd tal:content="error/number_reported" />
-       <dt>status</dt>
+       <dt i18n:translate="">status</dt>
        <dd tal:content="error/status" />
-       <dt>body</dt>
+       <dt i18n:translate="">body</dt>
        <dd tal:content="error/body" />
     </dl>
     </tal:main-macro>

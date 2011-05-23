@@ -7,6 +7,8 @@ from Products.CMFCore.utils import getToolByName
 from os import path
 from DateTime import DateTime
 
+from iute.default import IuteDefaultMF as _
+
 _this_dir = path.dirname(path.abspath(__file__))
 error_template = open(path.join(_this_dir, 'error_template.html')).read()
 

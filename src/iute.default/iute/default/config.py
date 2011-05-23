@@ -1,7 +1,7 @@
 from Products.CMFCore.Expression import Expression
 
 DEPENDENCIES = [
-    'uwosh.requirements'
+    'iute.requirements'
 ]
 
 #type mappings for generating the cache type policies
