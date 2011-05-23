@@ -2,9 +2,9 @@ Metadata-Version: 1.0
 Name: iute.core
 Version: 0.3.6b2
 Summary: UNKNOWN
-Home-page: http://svn.plone.org/svn/plone/plone.example
-Author: Nathan Van Gheem
-Author-email: vangheem@gmail.com
+Home-page: https://plone-ve.googlecode.com/svn/trunk/PloneEduIUTE/src/iute.core/
+Author: Leonardo J. Caballero G.
+Author-email: leonardocaballero@gmail.com
 License: GPL
 Description: Introduction
         ============
@@ -42,6 +42,7 @@ Description: Introduction
         Or in a tal expression you can do something like this,
         
         >>> python:portal.restrictedTraverse('@@iute_tools')
+        
         Changelog
         =========
         
@@ -58,6 +59,7 @@ Description: Introduction
         * Initial release
         
         
+Keywords: web zope plone theme IUTE
 Platform: UNKNOWN
 Classifier: Framework :: Plone
 Classifier: Programming Language :: Python
