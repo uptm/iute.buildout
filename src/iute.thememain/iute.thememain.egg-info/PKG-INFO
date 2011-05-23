@@ -2,13 +2,14 @@ Metadata-Version: 1.0
 Name: iute.thememain
 Version: 0.1
 Summary: An installable theme for Plone 3.0
-Home-page: http://svn.plone.org/svn/collective/
+Home-page: https://plone-ve.googlecode.com/svn/trunk/PloneEduIUTE/src/iute.thememain/
 Author: Leonardo J. Caballero G.
 Author-email: leonardocaballero@gmail.com
 License: GPL
 Description: Introduction
         ============
         
+        A fork package from uwosh.thememain for IUTE Website
         
         An installable Plone theme used by the main Plone IUTE site that extends iute.themebase.
         

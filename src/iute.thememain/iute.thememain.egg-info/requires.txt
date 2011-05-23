@@ -1,4 +1,4 @@
 setuptools
-uwosh.core
+iute.core
 iute.themebase
 plone.browserlayer

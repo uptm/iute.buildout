@@ -20,6 +20,7 @@ iute/thememain/README.txt
 iute/thememain/__init__.py
 iute/thememain/configure.zcml
 iute/thememain/interfaces.py
+iute/thememain/iute.thememain.pot
 iute/thememain/profiles.zcml
 iute/thememain/setuphandlers.py
 iute/thememain/skins.zcml
