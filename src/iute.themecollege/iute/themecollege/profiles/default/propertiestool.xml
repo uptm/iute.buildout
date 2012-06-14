@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<object name="portal_properties" meta_type="Plone Properties Tool"
-    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    i18n:domain="iute.themecollege">
- 	<object name="site_properties" meta_type="Plone Property Sheet">
-  		<property name="search_campus_by_default" type="boolean">False</property>
-		<property name="organization_type" type="string" i18n:translate="">College of</property>
- 	</object>	
-</object>
