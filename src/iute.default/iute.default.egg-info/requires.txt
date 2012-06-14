@@ -1,4 +1,0 @@
-setuptools
-iute.requirements>=0.2b1
-iute.core>=0.3.4b1
-plone.browserlayer

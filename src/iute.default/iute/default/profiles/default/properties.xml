@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<site>
-	<property name="email_from_name" type="string">IUTE WebSite</property>
-	<property name="iute_home_url" type="string">http://www.iute.tec.ve/</property>
-	<property name="use_iute_home_url" type="boolean">True</property>
-</site>
