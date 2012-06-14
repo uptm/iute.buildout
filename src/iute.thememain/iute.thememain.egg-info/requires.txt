@@ -1,4 +1,0 @@
-setuptools
-iute.core
-iute.themebase
-plone.browserlayer
